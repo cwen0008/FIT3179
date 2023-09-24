@@ -20,6 +20,20 @@
         "encoding": {"tooltip": {"field": "note"}}
       },
       {
+        "data": {
+          "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/7_others/oceans.topojson",
+          "format": {"type": "topojson", "feature": "oceans"}
+        },
+        "mark": {"type": "geoshape", "fill": "skyblue"}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/WorldMapWithGraticules.topojson",
+          "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
+        },
+        "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
+      },
+      {
         "transform": [
           {
             "lookup": "properties.GU_A3",

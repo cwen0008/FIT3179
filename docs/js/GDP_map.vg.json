@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "GDP per capita (2022)",
+    "title": "GDP per capita (2022) in USD",
     "width": 800,
     "height": 500,
     "data": {
@@ -51,7 +51,8 @@
           "color": {
             "field": "GDP per capita",
             "type": "quantitative",
-            "scale": {"scheme":"goldorange"}
+            "scale": {"scheme":"goldorange"},
+            "title": "GDP per capita(US$)"
           },
           "tooltip": [
             {"field": "properties.GU_A3", "type": "nominal", "title": "Country"},

@@ -13,12 +13,17 @@
 <body>
   
 <div id="choropleth_map"></div>
+<div id="g2"></div>
 
 <script type="text/javascript">
 
-  var spec2 = "js/GDP_map.vg.json";
-  vegaEmbed('#choropleth_map', spec2, {"actions": false}).then(function(result) {
+  var spec1 = "js/GDP_map.vg.json";
+  vegaEmbed('#choropleth_map', spec1, {"actions": false}).then(function(result) {
   }).catch(console.error);
+
+  var spec2 = "js/GDP_bar.vg.json";
+    vegaEmbed("#g2", spec2, {"actions": false}).then(function(result) {
+    }).catch(console.error);
 </script>
 
 </body>
